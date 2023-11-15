@@ -74,14 +74,9 @@
                     <div class="title">{{ $t('home.code.title') }}</div>
                     <!-- 木有办法，prism会按照格式渲染 -->
 <pre><code class="language-css" id="code">
-    "glass.background-color" = "{{ state.color }};"
-    <template v-if="state.blur || state.saturation < 100">
-    "glass.backdrop-filter" = <template v-if="state.blur">
-        "blur({{state.blur}}px)";</template><template v-if="state.saturation < 100"> "saturate({{ state.saturation / 100 }})";</template>;
-    </template>
-    <template v-if="state.radius">
-    "border-radius" = "{{ state.radius }}px";
-    </template>
+    "glass.background-color" = "{{ state.color }}";<template v-if="state.blur || state.saturation < 100">
+    "glass.backdrop-filter" = <template v-if="state.blur">"blur({{state.blur}}px)";</template><template v-if="state.saturation < 100"> "saturate({{ state.saturation / 100 }})";</template>;
+    </template><template v-if="state.radius">"border-radius" = "{{ state.radius }}px";</template>
 }</code></pre>
                 </div>
             </main>
