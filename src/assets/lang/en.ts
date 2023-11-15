@@ -42,7 +42,7 @@ export default {
             }
         },
         code: {
-            title: 'CSS Code',
+            title: 'NSON Code',
             copied: 'Copied!'
         }
     },
