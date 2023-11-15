@@ -77,7 +77,7 @@
     "glass.background-color" = "{{ state.color }}";<template v-if="state.blur || state.saturation < 100">
     "glass.backdrop-filter" = <template v-if="state.blur">"blur({{state.blur}}px)";</template><template v-if="state.saturation < 100"> "saturate({{ state.saturation / 100 }})";</template>
     </template><template v-if="state.radius">"glass.border-radius" = "{{ state.radius }}px";</template>
-}</code></pre>
+</code></pre>
                 </div>
             </main>
         </section>
